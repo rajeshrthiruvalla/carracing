@@ -12,9 +12,14 @@
 .my-car{
   width: 33%;
   aspect-ratio : 1/2;
-  /* position: fixed; */
   background-size:cover;
-  /* bottom: 0px; */
+}
+.car{
+  width: 33%;
+  aspect-ratio : 1/2;
+  background-size:cover;
+  display: inline-block;
+  position: absolute;
 }
 .event-arrow-div{
   display: flex;
@@ -23,8 +28,14 @@
 .event-arrow-item{
   width: 10%;
   aspect-ratio : 1/1;
+  z-index: 2;
 }
 .event-arrow-item img{
+  width: 100%;
+}
+.racing-div{
+  position: fixed;
+  height: 100vh;
   width: 100%;
 }
 @media (max-width: 575.98px) {
